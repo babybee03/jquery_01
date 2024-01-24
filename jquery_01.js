@@ -1,3 +1,7 @@
 $(function(){
-    $("*").css("border","1px solid blue");
+        $(".img_all > img").each(function(i) {
+                $(this).css({
+                        left: 340*i + "px"
+                })
+        })
 })

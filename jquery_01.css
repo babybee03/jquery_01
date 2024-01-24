@@ -1,0 +1,8 @@
+.img_all > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+}

@@ -1,8 +1,53 @@
-.img_all > img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 340px;
-    height: 340px;
-    object-fit: cover;
+* {
+    margin: 0;
+    padding: 0;
+}
+.page-main {
+    position: relative;
+    clear: both;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+.page-main > h2 {
+    position: relative;
+    clear: both;
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+#button_all {
+    position: relative;
+    clear: both;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+
+.button_box {
+    position: relative;
+    clear: both;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    background: #888;
+}
+.button_box > button {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    border: solid 0px rgba(174, 94, 155, 0.5);
+    border-radius: 10px;
+    color: #333;
+    margin: 10px 10px;
+    background-color: #fff;
+
 }

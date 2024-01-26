@@ -1,53 +1,50 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
 }
-.page-main {
+.box_all {
     position: relative;
-    clear: both;
     width: 1200px;
-    height: 600px;
+    height: 3200px;
     margin: 0 auto;
-    background: #f1f1f1;
+    display: flex;
+    flex-flow: column nowrap;
 }
-.page-main > h2 {
+#box_01 {
     position: relative;
-    clear: both;
     width: 1200px;
-    height: 50px;
-    line-height: 50px;
-    color: #333;
-    text-align: center;
-    margin: 0 auto;
-    background: #f4f4f4;
+    height: 800px;
+    background: #f90;
 }
-#button_all {
+#box_02 {
     position: relative;
-    clear: both;
     width: 1200px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #ddd;
+    height: 800px;
+    left: -600px;
+    background: #f90;
+    opacity: 10%;
 }
-
-.button_box {
+#box_03 {
     position: relative;
-    clear: both;
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto;
-    background: #888;
+    width: 1200px;
+    height: 800px;
+    left: 1800px;
+    background: #0ff;
+    opacity: 10%;
 }
-.button_box > button {
+#box_04 {
     position: relative;
-    float: left;
-    width: 200px;
-    height: 80px;
-    line-height: 80px;
-    border: solid 0px rgba(174, 94, 155, 0.5);
-    border-radius: 10px;
-    color: #333;
-    margin: 10px 10px;
-    background-color: #fff;
-
+    width: 1200px;
+    height: 800px;
+    left: -600px;
+    background: #ff0;
+    opacity: 10%;
+}
+#box_05 {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    left: 1800px;
+    background: #f00;
+    opacity: 10%;
 }

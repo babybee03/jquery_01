@@ -1,31 +1,19 @@
 $(function(){
-        $(window).scroll(function(){
-                var scroll_height = $(window).scrollTop();
-                console.log(scroll_height);
+    var obj = [
+        {"area":"서울"},
+        {"area":"부산"},
+        {"area":"전주"}
+    ];
+    $("#menu2 li").each(function(i, object){
+        console.log(i);
+        console.log(object);
+    })
 
-                if(scroll_height >= 400) {
-                        $("#box_02").animate({
-                                "left" : "0",
-                                "opacity" : "1"
-                        }, 1000)
-                }
-                if(scroll_height >= 1000) {
-                        $("#box_03").animate({
-                                "left" : "0",
-                                "opacity" : "1"
-                        }, 1000)
-                }
-                if(scroll_height >= 1400) {
-                        $("#box_04").animate({
-                                "left" : "0",
-                                "opacity" : 1
-                        }, 1000)
-                }
-                if(scroll_height >= 2000) {
-                        $("#box_05").animate({
-                                "left":"0",
-                                "opacity": 1
-                        },1000)
-                }
-        })
+    $.each(obj, function(i, object) {
+        console.log(i + ":", object);
+    })
+
+    console.log("====The End====")
 })
+
+console.log("====The End 2====")

@@ -10,7 +10,7 @@ $(function(){
         $(".txt2")
         .css({"background-color":"#0ff"});
     });
-    $(".btn3").on("dbclick",function(e) {
+    $(".btn3").on("dblclick",function(e) {
         e.preventDefault();
         $(".txt3")
         .css({"background-color":"#0f0"});

@@ -1,4 +1,4 @@
-
+/*
 $(function(){
     $(".btn1").on("click",function(e) {
         e.preventDefault();
@@ -17,4 +17,19 @@ $(function(){
     });
 })
 
-
+*/
+$(function(){
+    $("#user_id_1, #user_pw_1").on("focus", function(){
+        $(this).css({
+            "background-color":"pink"
+        })
+    })
+    $("#user_id_1, #user_pw_1").on("blur", function(){
+        $(this).css({
+            "background-color":"#ff0"
+        })
+    })
+    $("frm_2").on("focusin", function(){
+        43p 하자
+    })
+})

@@ -18,34 +18,45 @@ $(function(){
 })
 
 */
-
+/*
 $(function(){
-    $(".menu li").on("mouseenter", function(e){
-        e.preventDefault();
-        $(".menu li").find("div").css({
-            "display": "none"
-        })
-        $(this).css({
-            "backgroundColor":"#ff0"
-        })
-        $(this).children().css({
-            "display":"block"
-        })
-        $(this).children().animate({
-            "top":"50px",
-            "backgroundColor":"red"
-        }, 300)
+    var i = 0;
+    $(".button").on("click", function(){
+        i++;
+        if(i % 2 == 1) {
+            $(".menu_all").animate({
+                "top":"0",
+                "left":  "370px"
+            },1000)
+        } else {
+            $(".menu_all").animate({
+                "top": "0",
+                "left": "520px"
+            },1000)
+        }
     })
-    $(".menu li").on("mouseleave", function(e){
-        e.preventDefault();
-        $(this).children().css({
-            "backgroundColor":"pink",
-            "color":"#333"
-        })
-        $(this).find("div").css({
-            "display":"none",
-            "top":"-200px"
-        })
+
+    $("img").on("click",function(){
+        $(".menu_all").animate({
+            "top": "0",
+            "left": "520px"
+        },1000)
+        i = 0;
     })
-    
+})
+*/
+$(function(){
+    position = 0;
+    $(".button_01").on("click", function(){
+        position++;
+        if(position % 2 ==1) {
+            $(".box_01").animate({
+                scale: "1.2"
+            }, 1000, "swing")
+        } else {
+            $(".box_01").animate({
+                scale:"1"
+            }, 1000, "swing")
+        }
+    })
 })

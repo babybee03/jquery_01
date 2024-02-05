@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>slide</title>
     <link rel="stylesheet" href="practice.css">
 </head>
 <body>
-    <div id="wrap">
-      <p><a href="http://easyspub.co.kr" target="_blank">Easypub</a></p>
-      <p><a href="http://naver.com">Naver</a></p>
-      <p><a href="http://daum.net">Daum</a></p>
-      <p><a href="http://google.com">Google</a></p>
-
-      <form action="#" method="get" id="member_f">
-        <p>
-          <label for="user_id">아이디</label>
-          <input type="text" name="user_id" id="user_id">
-        </p>
-        <p>
-          <label for="user_id">아이디2</label>
-          <input type="text" name="user_id" id="user_id">
-        </p>
-        <p>
-          <label for="user_id">비밀번호</label>
-          <input type="password" name="user_pw" id="user_pw">
-        </p>
-      </form>
-      
+   
+  <section class="photo_wrap">
+    <div class="photo_all">
+      <div class="photo">
+        <img src="img/img_01.jpg" alt="">
+      </div>
+      <div class="photo">
+        <img src="img/img_02.jpg" alt="">
+      </div>
+      <div class="photo">
+        <img src="img/img_03.jpg" alt="">
+      </div>
     </div>
+
+    <nav class="dot_all">
+      <div id="dot" class="open">●</div>
+      <div id="dot">●</div>
+      <div id="dot">●</div>
+    </nav>
+
+    <aside class="prev">◀</aside>
+    <aside class="next">▶</aside>
+  </section>
+  
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"

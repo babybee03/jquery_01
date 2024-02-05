@@ -1,8 +1,8 @@
 $(function(){
-    $photo_all =$(".photo_all");
+    $photo_all = $(".photo_all");
     $photo_all_list = $(".photo_all > div");
     $dot_all = $(".dot_all");
-    $(dot_all_list) = $(".dot_all > div");
+    $dot_all_list = $(".dot_all > div");
 
     function var_set() {
         photo_width = $(".photo").width();

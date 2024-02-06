@@ -46,17 +46,42 @@ $(function(){
 })
 */
 $(function(){
-    position = 0;
-    $(".button_01").on("click", function(){
-        position++;
-        if(position % 2 ==1) {
-            $(".box_01").animate({
-                scale: "1.2"
-            }, 1000, "swing")
-        } else {
-            $(".box_01").animate({
-                scale:"1"
-            }, 1000, "swing")
-        }
+    $(window).on("scroll", function(){
+        $(".layout_01").each(function(){
+            var location_01 = $(window).scrollTop() + $(window).height();
+            var location_02 = $(this).offset().top + ($(this).height()/2);
+
+            if(location_01 > location_02) {
+                $("#box_01_left").animate({
+                  "left"   : "0",
+                  "opacity" : "1"
+                }, 2000)
+
+                $("#box_01_right").animate({
+                    "left": "500px",
+                    "opacity":"1"
+                }, 2000)
+            }
+        })
+    })
+})
+
+$(function(){
+    $(window).on("scroll", function(){
+        $(".layout_02").each(function(){
+            var location_03 = $(window).scrollTop() + $(window).height();
+            var location_04 = $(this).offset().top + ($(this).height()/2);
+
+            if(location_03 > location_04) {
+                $("#box_02_left").animate({
+                    "top":"0",
+                    "opacity": "1"
+                },2000)
+                $("#box_02_right").animate({
+                    "top": "100px",
+                    "opacity":"1"
+                },2000)
+            }
+        })
     })
 })
